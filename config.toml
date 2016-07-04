@@ -1,0 +1,10 @@
+baseurl = "http://www.pcap4j.org"
+languageCode = "en-us"
+title = "Pcap4J"
+theme = "hugoscroll"
+
+[Params]
+  github = "kaitoy/pcap4j"
+  email = "kaitoy@pcap4j.org"
+  description = "A Java library for capturing, crafting, and sending packets."
+  logo = "/img/pcap4j-logo-color.png"
