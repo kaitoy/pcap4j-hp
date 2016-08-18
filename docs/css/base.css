@@ -1,0 +1,2534 @@
+@charset "UTF-8";
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?v=4.2.0");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-fw {
+  width: 1.28571em;
+  text-align: center; }
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none; }
+  .fa-ul > li {
+    position: relative; }
+
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center; }
+  .fa-li.fa-lg {
+    left: -1.85714em; }
+
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.fa.pull-left {
+  margin-right: .3em; }
+.fa.pull-right {
+  margin-left: .3em; }
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none; }
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.fa-stack-1x {
+  line-height: inherit; }
+
+.fa-stack-2x {
+  font-size: 2em; }
+
+.fa-inverse {
+  color: #fff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-glass:before {
+  content: ""; }
+
+.fa-music:before {
+  content: ""; }
+
+.fa-search:before {
+  content: ""; }
+
+.fa-envelope-o:before {
+  content: ""; }
+
+.fa-heart:before {
+  content: ""; }
+
+.fa-star:before {
+  content: ""; }
+
+.fa-star-o:before {
+  content: ""; }
+
+.fa-user:before {
+  content: ""; }
+
+.fa-film:before {
+  content: ""; }
+
+.fa-th-large:before {
+  content: ""; }
+
+.fa-th:before {
+  content: ""; }
+
+.fa-th-list:before {
+  content: ""; }
+
+.fa-check:before {
+  content: ""; }
+
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: ""; }
+
+.fa-search-plus:before {
+  content: ""; }
+
+.fa-search-minus:before {
+  content: ""; }
+
+.fa-power-off:before {
+  content: ""; }
+
+.fa-signal:before {
+  content: ""; }
+
+.fa-gear:before,
+.fa-cog:before {
+  content: ""; }
+
+.fa-trash-o:before {
+  content: ""; }
+
+.fa-home:before {
+  content: ""; }
+
+.fa-file-o:before {
+  content: ""; }
+
+.fa-clock-o:before {
+  content: ""; }
+
+.fa-road:before {
+  content: ""; }
+
+.fa-download:before {
+  content: ""; }
+
+.fa-arrow-circle-o-down:before {
+  content: ""; }
+
+.fa-arrow-circle-o-up:before {
+  content: ""; }
+
+.fa-inbox:before {
+  content: ""; }
+
+.fa-play-circle-o:before {
+  content: ""; }
+
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: ""; }
+
+.fa-refresh:before {
+  content: ""; }
+
+.fa-list-alt:before {
+  content: ""; }
+
+.fa-lock:before {
+  content: ""; }
+
+.fa-flag:before {
+  content: ""; }
+
+.fa-headphones:before {
+  content: ""; }
+
+.fa-volume-off:before {
+  content: ""; }
+
+.fa-volume-down:before {
+  content: ""; }
+
+.fa-volume-up:before {
+  content: ""; }
+
+.fa-qrcode:before {
+  content: ""; }
+
+.fa-barcode:before {
+  content: ""; }
+
+.fa-tag:before {
+  content: ""; }
+
+.fa-tags:before {
+  content: ""; }
+
+.fa-book:before {
+  content: ""; }
+
+.fa-bookmark:before {
+  content: ""; }
+
+.fa-print:before {
+  content: ""; }
+
+.fa-camera:before {
+  content: ""; }
+
+.fa-font:before {
+  content: ""; }
+
+.fa-bold:before {
+  content: ""; }
+
+.fa-italic:before {
+  content: ""; }
+
+.fa-text-height:before {
+  content: ""; }
+
+.fa-text-width:before {
+  content: ""; }
+
+.fa-align-left:before {
+  content: ""; }
+
+.fa-align-center:before {
+  content: ""; }
+
+.fa-align-right:before {
+  content: ""; }
+
+.fa-align-justify:before {
+  content: ""; }
+
+.fa-list:before {
+  content: ""; }
+
+.fa-dedent:before,
+.fa-outdent:before {
+  content: ""; }
+
+.fa-indent:before {
+  content: ""; }
+
+.fa-video-camera:before {
+  content: ""; }
+
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: ""; }
+
+.fa-pencil:before {
+  content: ""; }
+
+.fa-map-marker:before {
+  content: ""; }
+
+.fa-adjust:before {
+  content: ""; }
+
+.fa-tint:before {
+  content: ""; }
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: ""; }
+
+.fa-share-square-o:before {
+  content: ""; }
+
+.fa-check-square-o:before {
+  content: ""; }
+
+.fa-arrows:before {
+  content: ""; }
+
+.fa-step-backward:before {
+  content: ""; }
+
+.fa-fast-backward:before {
+  content: ""; }
+
+.fa-backward:before {
+  content: ""; }
+
+.fa-play:before {
+  content: ""; }
+
+.fa-pause:before {
+  content: ""; }
+
+.fa-stop:before {
+  content: ""; }
+
+.fa-forward:before {
+  content: ""; }
+
+.fa-fast-forward:before {
+  content: ""; }
+
+.fa-step-forward:before {
+  content: ""; }
+
+.fa-eject:before {
+  content: ""; }
+
+.fa-chevron-left:before {
+  content: ""; }
+
+.fa-chevron-right:before {
+  content: ""; }
+
+.fa-plus-circle:before {
+  content: ""; }
+
+.fa-minus-circle:before {
+  content: ""; }
+
+.fa-times-circle:before {
+  content: ""; }
+
+.fa-check-circle:before {
+  content: ""; }
+
+.fa-question-circle:before {
+  content: ""; }
+
+.fa-info-circle:before {
+  content: ""; }
+
+.fa-crosshairs:before {
+  content: ""; }
+
+.fa-times-circle-o:before {
+  content: ""; }
+
+.fa-check-circle-o:before {
+  content: ""; }
+
+.fa-ban:before {
+  content: ""; }
+
+.fa-arrow-left:before {
+  content: ""; }
+
+.fa-arrow-right:before {
+  content: ""; }
+
+.fa-arrow-up:before {
+  content: ""; }
+
+.fa-arrow-down:before {
+  content: ""; }
+
+.fa-mail-forward:before,
+.fa-share:before {
+  content: ""; }
+
+.fa-expand:before {
+  content: ""; }
+
+.fa-compress:before {
+  content: ""; }
+
+.fa-plus:before {
+  content: ""; }
+
+.fa-minus:before {
+  content: ""; }
+
+.fa-asterisk:before {
+  content: ""; }
+
+.fa-exclamation-circle:before {
+  content: ""; }
+
+.fa-gift:before {
+  content: ""; }
+
+.fa-leaf:before {
+  content: ""; }
+
+.fa-fire:before {
+  content: ""; }
+
+.fa-eye:before {
+  content: ""; }
+
+.fa-eye-slash:before {
+  content: ""; }
+
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: ""; }
+
+.fa-plane:before {
+  content: ""; }
+
+.fa-calendar:before {
+  content: ""; }
+
+.fa-random:before {
+  content: ""; }
+
+.fa-comment:before {
+  content: ""; }
+
+.fa-magnet:before {
+  content: ""; }
+
+.fa-chevron-up:before {
+  content: ""; }
+
+.fa-chevron-down:before {
+  content: ""; }
+
+.fa-retweet:before {
+  content: ""; }
+
+.fa-shopping-cart:before {
+  content: ""; }
+
+.fa-folder:before {
+  content: ""; }
+
+.fa-folder-open:before {
+  content: ""; }
+
+.fa-arrows-v:before {
+  content: ""; }
+
+.fa-arrows-h:before {
+  content: ""; }
+
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: ""; }
+
+.fa-tt-square:before {
+  content: ""; }
+
+.fa-fb-square:before {
+  content: ""; }
+
+.fa-camera-retro:before {
+  content: ""; }
+
+.fa-key:before {
+  content: ""; }
+
+.fa-gears:before,
+.fa-cogs:before {
+  content: ""; }
+
+.fa-comments:before {
+  content: ""; }
+
+.fa-thumbs-o-up:before {
+  content: ""; }
+
+.fa-thumbs-o-down:before {
+  content: ""; }
+
+.fa-star-half:before {
+  content: ""; }
+
+.fa-heart-o:before {
+  content: ""; }
+
+.fa-sign-out:before {
+  content: ""; }
+
+.fa-ll-square:before {
+  content: ""; }
+
+.fa-thumb-tack:before {
+  content: ""; }
+
+.fa-external-link:before {
+  content: ""; }
+
+.fa-sign-in:before {
+  content: ""; }
+
+.fa-trophy:before {
+  content: ""; }
+
+.fa-github-square:before {
+  content: ""; }
+
+.fa-upload:before {
+  content: ""; }
+
+.fa-lemon-o:before {
+  content: ""; }
+
+.fa-phone:before {
+  content: ""; }
+
+.fa-square-o:before {
+  content: ""; }
+
+.fa-bookmark-o:before {
+  content: ""; }
+
+.fa-phone-square:before {
+  content: ""; }
+
+.fa-tt:before {
+  content: ""; }
+
+.fa-fb:before {
+  content: ""; }
+
+.fa-github:before {
+  content: ""; }
+
+.fa-unlock:before {
+  content: ""; }
+
+.fa-credit-card:before {
+  content: ""; }
+
+.fa-rss:before {
+  content: ""; }
+
+.fa-hdd-o:before {
+  content: ""; }
+
+.fa-bullhorn:before {
+  content: ""; }
+
+.fa-bell:before {
+  content: ""; }
+
+.fa-certificate:before {
+  content: ""; }
+
+.fa-hand-o-right:before {
+  content: ""; }
+
+.fa-hand-o-left:before {
+  content: ""; }
+
+.fa-hand-o-up:before {
+  content: ""; }
+
+.fa-hand-o-down:before {
+  content: ""; }
+
+.fa-arrow-circle-left:before {
+  content: ""; }
+
+.fa-arrow-circle-right:before {
+  content: ""; }
+
+.fa-arrow-circle-up:before {
+  content: ""; }
+
+.fa-arrow-circle-down:before {
+  content: ""; }
+
+.fa-globe:before {
+  content: ""; }
+
+.fa-wrench:before {
+  content: ""; }
+
+.fa-tasks:before {
+  content: ""; }
+
+.fa-filter:before {
+  content: ""; }
+
+.fa-briefcase:before {
+  content: ""; }
+
+.fa-arrows-alt:before {
+  content: ""; }
+
+.fa-group:before,
+.fa-users:before {
+  content: ""; }
+
+.fa-chain:before,
+.fa-link:before {
+  content: ""; }
+
+.fa-cloud:before {
+  content: ""; }
+
+.fa-flask:before {
+  content: ""; }
+
+.fa-cut:before,
+.fa-scissors:before {
+  content: ""; }
+
+.fa-copy:before,
+.fa-files-o:before {
+  content: ""; }
+
+.fa-paperclip:before {
+  content: ""; }
+
+.fa-save:before,
+.fa-floppy-o:before {
+  content: ""; }
+
+.fa-square:before {
+  content: ""; }
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: ""; }
+
+.fa-list-ul:before {
+  content: ""; }
+
+.fa-list-ol:before {
+  content: ""; }
+
+.fa-strikethrough:before {
+  content: ""; }
+
+.fa-underline:before {
+  content: ""; }
+
+.fa-table:before {
+  content: ""; }
+
+.fa-magic:before {
+  content: ""; }
+
+.fa-truck:before {
+  content: ""; }
+
+.fa-pinterest:before {
+  content: ""; }
+
+.fa-pinterest-square:before {
+  content: ""; }
+
+.fa-google-plus-square:before {
+  content: ""; }
+
+.fa-google-plus:before {
+  content: ""; }
+
+.fa-money:before {
+  content: ""; }
+
+.fa-caret-down:before {
+  content: ""; }
+
+.fa-caret-up:before {
+  content: ""; }
+
+.fa-caret-left:before {
+  content: ""; }
+
+.fa-caret-right:before {
+  content: ""; }
+
+.fa-columns:before {
+  content: ""; }
+
+.fa-unsorted:before,
+.fa-sort:before {
+  content: ""; }
+
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: ""; }
+
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: ""; }
+
+.fa-envelope:before {
+  content: ""; }
+
+.fa-ll:before {
+  content: ""; }
+
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: ""; }
+
+.fa-legal:before,
+.fa-gavel:before {
+  content: ""; }
+
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: ""; }
+
+.fa-comment-o:before {
+  content: ""; }
+
+.fa-comments-o:before {
+  content: ""; }
+
+.fa-flash:before,
+.fa-bolt:before {
+  content: ""; }
+
+.fa-sitemap:before {
+  content: ""; }
+
+.fa-umbrella:before {
+  content: ""; }
+
+.fa-paste:before,
+.fa-clipboard:before {
+  content: ""; }
+
+.fa-lightbulb-o:before {
+  content: ""; }
+
+.fa-exchange:before {
+  content: ""; }
+
+.fa-cloud-download:before {
+  content: ""; }
+
+.fa-cloud-upload:before {
+  content: ""; }
+
+.fa-user-md:before {
+  content: ""; }
+
+.fa-stethoscope:before {
+  content: ""; }
+
+.fa-suitcase:before {
+  content: ""; }
+
+.fa-bell-o:before {
+  content: ""; }
+
+.fa-coffee:before {
+  content: ""; }
+
+.fa-cutlery:before {
+  content: ""; }
+
+.fa-file-text-o:before {
+  content: ""; }
+
+.fa-building-o:before {
+  content: ""; }
+
+.fa-hospital-o:before {
+  content: ""; }
+
+.fa-ambulance:before {
+  content: ""; }
+
+.fa-medkit:before {
+  content: ""; }
+
+.fa-fighter-jet:before {
+  content: ""; }
+
+.fa-beer:before {
+  content: ""; }
+
+.fa-h-square:before {
+  content: ""; }
+
+.fa-plus-square:before {
+  content: ""; }
+
+.fa-angle-double-left:before {
+  content: ""; }
+
+.fa-angle-double-right:before {
+  content: ""; }
+
+.fa-angle-double-up:before {
+  content: ""; }
+
+.fa-angle-double-down:before {
+  content: ""; }
+
+.fa-angle-left:before {
+  content: ""; }
+
+.fa-angle-right:before {
+  content: ""; }
+
+.fa-angle-up:before {
+  content: ""; }
+
+.fa-angle-down:before {
+  content: ""; }
+
+.fa-desktop:before {
+  content: ""; }
+
+.fa-laptop:before {
+  content: ""; }
+
+.fa-tablet:before {
+  content: ""; }
+
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: ""; }
+
+.fa-circle-o:before {
+  content: ""; }
+
+.fa-quote-left:before {
+  content: ""; }
+
+.fa-quote-right:before {
+  content: ""; }
+
+.fa-spinner:before {
+  content: ""; }
+
+.fa-circle:before {
+  content: ""; }
+
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: ""; }
+
+.fa-github-alt:before {
+  content: ""; }
+
+.fa-folder-o:before {
+  content: ""; }
+
+.fa-folder-open-o:before {
+  content: ""; }
+
+.fa-smile-o:before {
+  content: ""; }
+
+.fa-frown-o:before {
+  content: ""; }
+
+.fa-meh-o:before {
+  content: ""; }
+
+.fa-gamepad:before {
+  content: ""; }
+
+.fa-keyboard-o:before {
+  content: ""; }
+
+.fa-flag-o:before {
+  content: ""; }
+
+.fa-flag-checkered:before {
+  content: ""; }
+
+.fa-terminal:before {
+  content: ""; }
+
+.fa-code:before {
+  content: ""; }
+
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: ""; }
+
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: ""; }
+
+.fa-location-arrow:before {
+  content: ""; }
+
+.fa-crop:before {
+  content: ""; }
+
+.fa-code-fork:before {
+  content: ""; }
+
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: ""; }
+
+.fa-question:before {
+  content: ""; }
+
+.fa-info:before {
+  content: ""; }
+
+.fa-exclamation:before {
+  content: ""; }
+
+.fa-superscript:before {
+  content: ""; }
+
+.fa-subscript:before {
+  content: ""; }
+
+.fa-eraser:before {
+  content: ""; }
+
+.fa-puzzle-piece:before {
+  content: ""; }
+
+.fa-microphone:before {
+  content: ""; }
+
+.fa-microphone-slash:before {
+  content: ""; }
+
+.fa-shield:before {
+  content: ""; }
+
+.fa-calendar-o:before {
+  content: ""; }
+
+.fa-fire-extinguisher:before {
+  content: ""; }
+
+.fa-rocket:before {
+  content: ""; }
+
+.fa-maxcdn:before {
+  content: ""; }
+
+.fa-chevron-circle-left:before {
+  content: ""; }
+
+.fa-chevron-circle-right:before {
+  content: ""; }
+
+.fa-chevron-circle-up:before {
+  content: ""; }
+
+.fa-chevron-circle-down:before {
+  content: ""; }
+
+.fa-html5:before {
+  content: ""; }
+
+.fa-css3:before {
+  content: ""; }
+
+.fa-anchor:before {
+  content: ""; }
+
+.fa-unlock-alt:before {
+  content: ""; }
+
+.fa-bullseye:before {
+  content: ""; }
+
+.fa-ellipsis-h:before {
+  content: ""; }
+
+.fa-ellipsis-v:before {
+  content: ""; }
+
+.fa-rss-square:before {
+  content: ""; }
+
+.fa-play-circle:before {
+  content: ""; }
+
+.fa-ticket:before {
+  content: ""; }
+
+.fa-minus-square:before {
+  content: ""; }
+
+.fa-minus-square-o:before {
+  content: ""; }
+
+.fa-level-up:before {
+  content: ""; }
+
+.fa-level-down:before {
+  content: ""; }
+
+.fa-check-square:before {
+  content: ""; }
+
+.fa-pencil-square:before {
+  content: ""; }
+
+.fa-external-link-square:before {
+  content: ""; }
+
+.fa-share-square:before {
+  content: ""; }
+
+.fa-compass:before {
+  content: ""; }
+
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: ""; }
+
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: ""; }
+
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: ""; }
+
+.fa-euro:before,
+.fa-eur:before {
+  content: ""; }
+
+.fa-gbp:before {
+  content: ""; }
+
+.fa-dollar:before,
+.fa-usd:before {
+  content: ""; }
+
+.fa-rupee:before,
+.fa-inr:before {
+  content: ""; }
+
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: ""; }
+
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: ""; }
+
+.fa-won:before,
+.fa-krw:before {
+  content: ""; }
+
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: ""; }
+
+.fa-file:before {
+  content: ""; }
+
+.fa-file-text:before {
+  content: ""; }
+
+.fa-sort-alpha-asc:before {
+  content: ""; }
+
+.fa-sort-alpha-desc:before {
+  content: ""; }
+
+.fa-sort-amount-asc:before {
+  content: ""; }
+
+.fa-sort-amount-desc:before {
+  content: ""; }
+
+.fa-sort-numeric-asc:before {
+  content: ""; }
+
+.fa-sort-numeric-desc:before {
+  content: ""; }
+
+.fa-thumbs-up:before {
+  content: ""; }
+
+.fa-thumbs-down:before {
+  content: ""; }
+
+.fa-youtube-square:before {
+  content: ""; }
+
+.fa-youtube:before {
+  content: ""; }
+
+.fa-xing:before {
+  content: ""; }
+
+.fa-xing-square:before {
+  content: ""; }
+
+.fa-youtube-play:before {
+  content: ""; }
+
+.fa-dropbox:before {
+  content: ""; }
+
+.fa-stack-overflow:before {
+  content: ""; }
+
+.fa-instagram:before {
+  content: ""; }
+
+.fa-flickr:before {
+  content: ""; }
+
+.fa-adn:before {
+  content: ""; }
+
+.fa-bitbucket:before {
+  content: ""; }
+
+.fa-bitbucket-square:before {
+  content: ""; }
+
+.fa-tumblr:before {
+  content: ""; }
+
+.fa-tumblr-square:before {
+  content: ""; }
+
+.fa-long-arrow-down:before {
+  content: ""; }
+
+.fa-long-arrow-up:before {
+  content: ""; }
+
+.fa-long-arrow-left:before {
+  content: ""; }
+
+.fa-long-arrow-right:before {
+  content: ""; }
+
+.fa-apple:before {
+  content: ""; }
+
+.fa-windows:before {
+  content: ""; }
+
+.fa-android:before {
+  content: ""; }
+
+.fa-linux:before {
+  content: ""; }
+
+.fa-dribbble:before {
+  content: ""; }
+
+.fa-skype:before {
+  content: ""; }
+
+.fa-foursquare:before {
+  content: ""; }
+
+.fa-trello:before {
+  content: ""; }
+
+.fa-female:before {
+  content: ""; }
+
+.fa-male:before {
+  content: ""; }
+
+.fa-gittip:before {
+  content: ""; }
+
+.fa-sun-o:before {
+  content: ""; }
+
+.fa-moon-o:before {
+  content: ""; }
+
+.fa-archive:before {
+  content: ""; }
+
+.fa-bug:before {
+  content: ""; }
+
+.fa-vk:before {
+  content: ""; }
+
+.fa-weibo:before {
+  content: ""; }
+
+.fa-renren:before {
+  content: ""; }
+
+.fa-pagelines:before {
+  content: ""; }
+
+.fa-stack-exchange:before {
+  content: ""; }
+
+.fa-arrow-circle-o-right:before {
+  content: ""; }
+
+.fa-arrow-circle-o-left:before {
+  content: ""; }
+
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: ""; }
+
+.fa-dot-circle-o:before {
+  content: ""; }
+
+.fa-wheelchair:before {
+  content: ""; }
+
+.fa-vimeo-square:before {
+  content: ""; }
+
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: ""; }
+
+.fa-plus-square-o:before {
+  content: ""; }
+
+.fa-space-shuttle:before {
+  content: ""; }
+
+.fa-slack:before {
+  content: ""; }
+
+.fa-envelope-square:before {
+  content: ""; }
+
+.fa-wordpress:before {
+  content: ""; }
+
+.fa-openid:before {
+  content: ""; }
+
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: ""; }
+
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: ""; }
+
+.fa-yahoo:before {
+  content: ""; }
+
+.fa-google:before {
+  content: ""; }
+
+.fa-reddit:before {
+  content: ""; }
+
+.fa-reddit-square:before {
+  content: ""; }
+
+.fa-stumbleupon-circle:before {
+  content: ""; }
+
+.fa-stumbleupon:before {
+  content: ""; }
+
+.fa-delicious:before {
+  content: ""; }
+
+.fa-digg:before {
+  content: ""; }
+
+.fa-pied-piper:before {
+  content: ""; }
+
+.fa-pied-piper-alt:before {
+  content: ""; }
+
+.fa-drupal:before {
+  content: ""; }
+
+.fa-joomla:before {
+  content: ""; }
+
+.fa-language:before {
+  content: ""; }
+
+.fa-fax:before {
+  content: ""; }
+
+.fa-building:before {
+  content: ""; }
+
+.fa-child:before {
+  content: ""; }
+
+.fa-paw:before {
+  content: ""; }
+
+.fa-spoon:before {
+  content: ""; }
+
+.fa-cube:before {
+  content: ""; }
+
+.fa-cubes:before {
+  content: ""; }
+
+.fa-behance:before {
+  content: ""; }
+
+.fa-behance-square:before {
+  content: ""; }
+
+.fa-steam:before {
+  content: ""; }
+
+.fa-steam-square:before {
+  content: ""; }
+
+.fa-recycle:before {
+  content: ""; }
+
+.fa-automobile:before,
+.fa-car:before {
+  content: ""; }
+
+.fa-cab:before,
+.fa-taxi:before {
+  content: ""; }
+
+.fa-tree:before {
+  content: ""; }
+
+.fa-spotify:before {
+  content: ""; }
+
+.fa-deviantart:before {
+  content: ""; }
+
+.fa-soundcloud:before {
+  content: ""; }
+
+.fa-database:before {
+  content: ""; }
+
+.fa-file-pdf-o:before {
+  content: ""; }
+
+.fa-file-word-o:before {
+  content: ""; }
+
+.fa-file-excel-o:before {
+  content: ""; }
+
+.fa-file-powerpoint-o:before {
+  content: ""; }
+
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: ""; }
+
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: ""; }
+
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: ""; }
+
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: ""; }
+
+.fa-file-code-o:before {
+  content: ""; }
+
+.fa-vine:before {
+  content: ""; }
+
+.fa-codepen:before {
+  content: ""; }
+
+.fa-jsfiddle:before {
+  content: ""; }
+
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: ""; }
+
+.fa-circle-o-notch:before {
+  content: ""; }
+
+.fa-ra:before,
+.fa-rebel:before {
+  content: ""; }
+
+.fa-ge:before,
+.fa-empire:before {
+  content: ""; }
+
+.fa-git-square:before {
+  content: ""; }
+
+.fa-git:before {
+  content: ""; }
+
+.fa-hacker-news:before {
+  content: ""; }
+
+.fa-tencent-weibo:before {
+  content: ""; }
+
+.fa-qq:before {
+  content: ""; }
+
+.fa-wechat:before,
+.fa-weixin:before {
+  content: ""; }
+
+.fa-send:before,
+.fa-paper-plane:before {
+  content: ""; }
+
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: ""; }
+
+.fa-history:before {
+  content: ""; }
+
+.fa-circle-thin:before {
+  content: ""; }
+
+.fa-header:before {
+  content: ""; }
+
+.fa-paragraph:before {
+  content: ""; }
+
+.fa-sliders:before {
+  content: ""; }
+
+.fa-share-alt:before {
+  content: ""; }
+
+.fa-share-alt-square:before {
+  content: ""; }
+
+.fa-bomb:before {
+  content: ""; }
+
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: ""; }
+
+.fa-tty:before {
+  content: ""; }
+
+.fa-binoculars:before {
+  content: ""; }
+
+.fa-plug:before {
+  content: ""; }
+
+.fa-slideshare:before {
+  content: ""; }
+
+.fa-twitch:before {
+  content: ""; }
+
+.fa-yelp:before {
+  content: ""; }
+
+.fa-newspaper-o:before {
+  content: ""; }
+
+.fa-wifi:before {
+  content: ""; }
+
+.fa-calculator:before {
+  content: ""; }
+
+.fa-paypal:before {
+  content: ""; }
+
+.fa-google-wallet:before {
+  content: ""; }
+
+.fa-cc-visa:before {
+  content: ""; }
+
+.fa-cc-mastercard:before {
+  content: ""; }
+
+.fa-cc-discover:before {
+  content: ""; }
+
+.fa-cc-amex:before {
+  content: ""; }
+
+.fa-cc-paypal:before {
+  content: ""; }
+
+.fa-cc-stripe:before {
+  content: ""; }
+
+.fa-bell-slash:before {
+  content: ""; }
+
+.fa-bell-slash-o:before {
+  content: ""; }
+
+.fa-trash:before {
+  content: ""; }
+
+.fa-copyright:before {
+  content: ""; }
+
+.fa-at:before {
+  content: ""; }
+
+.fa-eyedropper:before {
+  content: ""; }
+
+.fa-paint-brush:before {
+  content: ""; }
+
+.fa-birthday-cake:before {
+  content: ""; }
+
+.fa-area-chart:before {
+  content: ""; }
+
+.fa-pie-chart:before {
+  content: ""; }
+
+.fa-line-chart:before {
+  content: ""; }
+
+.fa-lastfm:before {
+  content: ""; }
+
+.fa-lastfm-square:before {
+  content: ""; }
+
+.fa-toggle-off:before {
+  content: ""; }
+
+.fa-toggle-on:before {
+  content: ""; }
+
+.fa-bicycle:before {
+  content: ""; }
+
+.fa-bus:before {
+  content: ""; }
+
+.fa-ioxhost:before {
+  content: ""; }
+
+.fa-angellist:before {
+  content: ""; }
+
+.fa-cc:before {
+  content: ""; }
+
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: ""; }
+
+.fa-meanpath:before {
+  content: ""; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Apply these base styles to all icons */
+.icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none; }
+
+/* Each icon is created by inserting the corret character into the
+   content of the :before pseudo element. Like a boss. */
+.icon-feed:before {
+  content: "\e001"; }
+
+.icon-twitter:before {
+  content: "\e002";
+  font-size: 1.1em; }
+
+.icon-google-plus:before {
+  content: "\e003"; }
+
+.icon-facebook:before {
+  content: "\e004"; }
+
+/* ==========================================================================
+   2. General - Setting up some base styles
+   ========================================================================== */
+html {
+  height: 100%;
+  max-height: 100%;
+  font-size: 67,5%;
+  overflow-x: hidden; }
+
+body {
+  height: 100%;
+  max-height: 100%;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  color: black; }
+
+a.fa {
+  text-decoration: none; }
+
+::-moz-selection {
+  color: #222;
+  background: #D6EDFF;
+  text-shadow: none; }
+
+::selection {
+  color: #222;
+  background: #D6EDFF;
+  text-shadow: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto", "Impact", sans-serif;
+  font-weight: bold; }
+
+h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 120%;
+  margin-top: 0;
+  font-family: "Impact", sans-serif;
+  margin-bottom: 0%; }
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  text-indent: -3px; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  text-indent: -2px; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 1rem; }
+
+a {
+  color: inherit;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s; }
+
+a:hover {
+  color: #93ca54; }
+
+a.btn {
+  text-decoration: none;
+  background-color: #9FD067;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0;
+  overflow: visible;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+a.btn:hover {
+  background: #93ca54;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5); }
+
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+  /*color: #50585D;*/ }
+
+p, ul, ol {
+  margin: 1em 0; }
+
+ol ol, ul ul,
+ul ol, ol ul {
+  margin: 0.4em 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #efefef;
+  margin: 3.2em 0;
+  padding: 0; }
+
+blockquote {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1.0em 0 1.0em -2.2em;
+  padding: 0 0 0 1.0em;
+  /*border-left: #4a4a4a 0.4em solid;*/
+  font-weight: lighter; }
+
+blockquote p {
+  margin: 0.8em 0; }
+
+.quo {
+  /*float: left;*/
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 20px; }
+
+blockquote small {
+  display: inline-block;
+  margin: 0.8em 0 0.8em 1.5em;
+  font-size: 0.9em;
+  color: #ccc; }
+
+blockquote small:before {
+  content: '\2014 \00A0'; }
+
+blockquote cite {
+  font-weight: bold; }
+
+blockquote cite a {
+  font-weight: normal; }
+
+dl {
+  margin: 1.6em 0; }
+
+dl dt {
+  float: left;
+  width: 180px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-bottom: 1em; }
+
+dl dd {
+  margin-left: 200px;
+  margin-bottom: 1em; }
+
+mark {
+  background-color: #ffc336; }
+
+code, tt {
+  padding: 3px 5px;
+  font-family: 'Source Code Pro', monospace, sans-serif;
+  font-size: 0.75em;
+  /*white-space: pre;*/
+  border: 1px solid #E3EDF3;
+  background: #F7FAFB;
+  border-radius: 2px;
+  color: black; }
+
+pre {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1.6em 0;
+  border: 1px solid #E3EDF3;
+  width: 100%;
+  font-family: monospace, sans-serif;
+  font-size: 0.9em;
+  white-space: pre;
+  overflow: auto;
+  background: #F7FAFB;
+  border-radius: 3px; }
+
+pre code, tt {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  background: transparent;
+  border: none;
+  padding: 0; }
+
+kbd {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  padding: 1px 8px;
+  border: #ccc 1px solid;
+  color: #666;
+  text-shadow: #fff 0 1px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset; }
+
+table {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1.6em 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent; }
+
+table th,
+table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #efefef; }
+
+table th {
+  color: #000; }
+
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0; }
+
+table tbody + tbody {
+  border-top: 2px solid #efefef; }
+
+table table table {
+  background-color: #fff; }
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+  background-color: #f6f6f6; }
+
+table.plain tbody > tr:nth-child(odd) > td,
+table.plain tbody > tr:nth-child(odd) > th {
+  background: transparent; }
+
+li {
+  margin-left: 30px; }
+
+ul li {
+  list-style-type: none; }
+
+.bult {
+  display: inline;
+  float: left;
+  padding-top: 7px; }
+
+/* ==========================================================================
+   3. Utilities - These things get used a lot
+   ========================================================================== */
+/* Hides shit */
+.hidden {
+  text-indent: -9999px;
+  visibility: hidden;
+  display: none; }
+
+/* Creates a responsive wrapper that makes our content scale nicely */
+.inner {
+  position: relative;
+  width: 80%;
+  max-width: 720px;
+  margin: 0 auto; }
+
+/* Centres vertically yo. (IE8+) */
+.vertical {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* ==========================================================================
+   4. General - The main styles for the the theme
+   ========================================================================== */
+/* Big cover image on the home page */
+#site-head {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0rem;
+  text-align: center;
+  color: white;
+  background: #00aba9 no-repeat center center;
+  background-size: cover; }
+
+#pcap4j-logo {
+  display: block;
+  max-height: 250px;
+  width: auto;
+  margin: 0 auto;
+  line-height: 0; }
+
+#back {
+  color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  padding: 6px;
+  font-size: 16px; }
+
+.blog-title {
+  margin: 10px 0 10px 0;
+  font-size: 5rem;
+  letter-spacing: -1px; }
+
+.description {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  letter-spacing: 0; }
+
+.post-holder {
+  width: 100%;
+  background: #f2efe8;
+  position: relative; }
+
+/* Every post, on every page, gets this style on its <article> tag */
+.post {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: 0rem auto;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  height: 70%;
+  word-break: break-word;
+  hyphens: auto; }
+
+/* Add a little circle in the middle of the border-bottom on our .post
+   just for the lolz and stylepoints. */
+.white {
+  color: white; }
+
+.post-title {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 5rem; }
+
+.post-title a {
+  text-decoration: none; }
+
+.post-excerpt p {
+  margin: 1.6rem 0 0 0;
+  font-size: 0.9em;
+  line-height: 1.6em; }
+
+.post-meta {
+  display: inline-block;
+  margin: 0 0 5px 0;
+  font-family: "Impact", sans-serif;
+  font-size: 1.5rem;
+  color: #9EABB3; }
+
+.post-meta a {
+  color: #9EABB3;
+  text-decoration: none; }
+
+.post-meta a:hover {
+  text-decoration: underline; }
+
+.user-meta {
+  position: relative;
+  padding: 0.3rem 40px 0 100px;
+  min-height: 77px; }
+
+.user-image {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.user-name {
+  display: block;
+  font-weight: bold; }
+
+.user-bio {
+  display: block;
+  max-width: 440px;
+  font-size: 1.4rem;
+  line-height: 1.5em; }
+
+.publish-meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4.3rem 0 4rem 0;
+  text-align: right; }
+
+.publish-heading {
+  display: block;
+  font-weight: bold; }
+
+.publish-date {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.5em; }
+
+/* ==========================================================================
+   5. Single Post - When you click on an individual post
+   ========================================================================== */
+.post-note {
+  font-size: 0.6em;
+  text-align: right; }
+
+.post-number {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background: #00aba9;
+  text-align: center;
+  line-height: 90px;
+  color: white;
+  margin-right: 15px;
+  font-size: 3.5rem; }
+
+.info-mark {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+  background-size: contain;
+  background-image: url("data:image/png;base64,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"); }
+
+.fadeInUp {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  visibility: visible !important; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+/* Tweak the .post wrapper style */
+.post-template .post {
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0; }
+
+/* Kill that stylish little circle that was on the border, too */
+.post-template .post:after {
+  display: none; }
+
+/* Insert some mad padding up in the header for better spacing */
+.post-template .post-header {
+  padding: 60px 0; }
+
+/* Keep large images within the bounds of the post-width */
+.post-content img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto; }
+
+.post-content a {
+  text-decoration: none;
+  font-family: "Roboto", "Times New Roman", serif;
+  font-weight: bold;
+  background: linear-gradient(transparent 85%, rgba(159, 208, 103, 0.7) 0%); }
+
+/* ==========================================================================
+   6. Third Party Elements - Embeds from other services
+   ========================================================================== */
+/* Github */
+.gist table {
+  margin: 0;
+  font-size: 1.4rem; }
+
+.gist .line-number {
+  min-width: 25px;
+  font-size: 1.1rem; }
+
+/* ==========================================================================
+   7. Pagination - Tools to let you flick between pages
+   ========================================================================== */
+/* The main wrapper for our pagination links */
+.pagination {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: 4rem auto;
+  font-family: "Impact", sans-serif;
+  font-size: 1.3rem;
+  color: #9EABB3;
+  text-align: center; }
+
+.pagination a {
+  color: #9EABB3; }
+
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  padding: 0 15px;
+  border: #EBF2F6 2px solid;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: border ease 0.3s; }
+
+.older-posts {
+  right: 0; }
+
+.page-number {
+  display: inline-block;
+  padding: 2px 0; }
+
+.newer-posts {
+  left: 0; }
+
+.older-posts:hover,
+.newer-posts:hover {
+  border-color: #9EABB3; }
+
+/* ==========================================================================
+   8. Footer - The bottom of every page
+   ========================================================================== */
+.site-footer {
+  position: relative;
+  margin: 0rem 0 0 0;
+  padding: 1rem 0;
+  font-family: "Roboto", "Impact", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  color: #BBC7CC;
+  text-align: center;
+  background: #22343A; }
+
+.site-footer a {
+  color: #BBC7CC;
+  text-decoration: underline; }
+
+.site-footer a:hover {
+  color: #50585D; }
+
+/* The subscribe icon on the footer */
+.subscribe {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  margin-left: -15px;
+  border: #EBF2F6 1px solid;
+  text-align: center;
+  line-height: 2.4rem;
+  border-radius: 50px;
+  background: #fff;
+  transition: box-shadow 0.5s; }
+
+/* The RSS icon, inserted via icon font */
+.subscribe:before {
+  color: #D2DEE3;
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  font-weight: bold;
+  transition: color 0.5s ease; }
+
+/* Add a box shadow to on hover */
+.subscribe:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px;
+  transition: box-shadow 0.25s; }
+
+.subscribe:hover:before {
+  color: #50585D; }
+
+/* CSS tooltip saying "Subscribe!" - initially hidden */
+.tooltip {
+  opacity: 0;
+  display: inline-block;
+  padding: 4px 8px 5px 8px;
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: center;
+  background: #50585D;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, top 0.3s ease; }
+
+/* The little chiclet arrow under the tooltip, pointing down */
+.tooltip:after {
+  content: "";
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #50585D transparent;
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -5px;
+  z-index: 220;
+  width: 0; }
+
+/* On hover, show the tooltip! */
+.subscribe:hover .tooltip {
+  opacity: 1;
+  top: -33px; }
+
+/* ==========================================================================
+   9. Media Queries - Smaller than 1130px
+   ========================================================================== */
+@media only screen and (max-width: 1130px) {
+  blockquote {
+    margin-left: 0; }
+
+  .post-holder {
+    padding-top: 20px; }
+
+  #site-head {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 240px;
+    padding: 15% 0;
+    height: 100%;
+    margin-bottom: 0rem; }
+
+  .blog-title {
+    font-size: 4rem;
+    letter-spacing: -1px; }
+
+  .description {
+    font-size: 1.7rem;
+    line-height: 1.5em; }
+
+  .post {
+    font-size: 0.9em;
+    line-height: 1.6em; }
+
+  .post-template .post {
+    padding-bottom: 1rem; }
+
+  .post-template .post-header {
+    padding: 40px 0; }
+
+  h1 {
+    font-size: 4.8rem;
+    text-indent: -2px; }
+
+  h2 {
+    font-size: 3.8rem; }
+
+  h3 {
+    font-size: 3.3rem; }
+
+  h4 {
+    font-size: 2.8rem; } }
+/* ==========================================================================
+   10. Media Queries - Smaller than 500px
+   ========================================================================== */
+@media only screen and (max-width: 500px) {
+  .post-holder {
+    padding-top: 20px; }
+
+  #pcap4j-logo img {
+    max-height: 180px; }
+
+  .inner,
+  .pagination {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px; }
+
+  .post {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 0.8em;
+    line-height: 1.6em; }
+
+  #site-head {
+    padding: 10% 0;
+    height: 65%; }
+
+  a.btn {
+    margin-top: 10px; }
+
+  .blog-title {
+    font-size: 3rem; }
+
+  .description {
+    font-size: 1.5rem; }
+
+  h1, h2 {
+    font-size: 3rem;
+    line-height: 1.1em;
+    letter-spacing: -1px; }
+
+  h3 {
+    font-size: 2.8rem; }
+
+  h4 {
+    font-size: 2.3rem; }
+
+  .post-template .post {
+    padding-bottom: 0; }
+
+  .post-template .post-header {
+    padding: 30px 0; }
+
+  .post-meta {
+    font-size: 1.3rem; }
+
+  .older-posts,
+  .newer-posts {
+    position: static;
+    margin: 10px 0; }
+
+  .page-number {
+    display: block; }
+
+  .site-footer {
+    /*margin-top: 0.8rem;*/
+    font-size: 1.1rem; } }
+/* ==========================================================================
+   End of file. Media queries should be the last thing here. Do not add stuff
+   below this point, or it will probably fuck everything up.
+   ========================================================================== */
+
+/*# sourceMappingURL=base.css.map */

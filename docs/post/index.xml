@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Pcap4J</title>
+    <link>https://www.pcap4j.org/post/</link>
+    <description>Recent content in Posts on Pcap4J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://www.pcap4j.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learn More</title>
+      <link>https://www.pcap4j.org/post/learn_more/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/learn_more/</guid>
+      <description>&lt;p&gt;Visit &lt;a href=&#34;https://github.com/kaitoy/pcap4j&#34;&gt;GitHub&lt;/a&gt; to learn more about Pcap4J!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get Packet Information</title>
+      <link>https://www.pcap4j.org/post/get_information_from_the_packet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/get_information_from_the_packet/</guid>
+      <description>&lt;p&gt;The packet you captured consists of headers and payloads of some protocols such as Ethernet, IPv4, and TCP.
+The Packet API of Pcap4J enables you to get information from the protocol headers.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;IpV4Packet ipV4Packet = packet.get(IpV4Packet.class);
+Inet4Address srcAddr = ipV4Packet.getHeader().getSrcAddr();
+System.out.println(srcAddr);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Capture Packet</title>
+      <link>https://www.pcap4j.org/post/capture_a_packet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/capture_a_packet/</guid>
+      <description>&lt;p&gt;Now you&amp;rsquo;ve got an ability to capture packets.
+Let&amp;rsquo;s get a packet using the pcap handle.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Packet packet = handle.getNextPacketEx();
+handle.close();
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Open Pcap Handle</title>
+      <link>https://www.pcap4j.org/post/open_pcap_handle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/open_pcap_handle/</guid>
+      <description>&lt;p&gt;Then, you can open a pcap handle from the network interface.
+A pcap handle provides you APIs to capture packets, send packets, and so on.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;int snapLen = 65536;
+PromiscuousMode mode = PromiscuousMode.PROMISCUOUS;
+int timeout = 10;
+PcapHandle handle = nif.openLive(snapLen, mode, timeout);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Find Network Interface</title>
+      <link>https://www.pcap4j.org/post/find_a_nif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/find_a_nif/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s time to write your awesome application.
+Firstly, you probably want to find a network interface on which you want to capture packets.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;InetAddress addr = InetAddress.getByName(&amp;quot;192.168.10.100&amp;quot;);
+PcapNetworkInterface nif = Pcaps.getDevByAddress(addr);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;post-note&#34;&gt;
+Note: &lt;a href=&#34;https://github.com/kaitoy/pcap4j#others&#34;&gt;Administrator/root privileges or some Linux capabilities are needed.&lt;/a&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Add Dependencies</title>
+      <link>https://www.pcap4j.org/post/add_pcap4j_to_your_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/add_pcap4j_to_your_project/</guid>
+      <description>&lt;p&gt;Before starting to write your code, you need to add Pcap4J and its dependencies to your classpath.
+The easiest way to do that is to use a build tool such as &lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt; and &lt;a href=&#34;https://maven.apache.org/&#34;&gt;Maven&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Gradle&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;compile &#39;org.pcap4j:pcap4j-core:1.+&#39;
+compile &#39;org.pcap4j:pcap4j-packetfactory-static:1.+&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Maven&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;org.pcap4j&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;pcap4j-core&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;[1.0, 2.0)&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;org.pcap4j&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;pcap4j-packetfactory-static&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;[1.0, 2.0)&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Native Library</title>
+      <link>https://www.pcap4j.org/post/install_native_library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pcap4j.org/post/install_native_library/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s start with installing &lt;a href=&#34;http://www.tcpdump.org/&#34;&gt;libpcap&lt;/a&gt; (for Mac/Linux/UNIX) or &lt;a href=&#34;https://www.winpcap.org/&#34;&gt;WinPcap&lt;/a&gt; (for Windows) on your computer.
+They are native libraries that powers the core functionalities of Pcap4J.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Ubuntu&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;apt-get install libpcap-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CentOs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;yum install libpcap-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mac&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;brew install libpcap
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Windows&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;choco install winpcap
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

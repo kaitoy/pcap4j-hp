@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://www.pcap4j.org/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/install_native_library/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/add_pcap4j_to_your_project/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/find_a_nif/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/open_pcap_handle/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/capture_a_packet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/get_information_from_the_packet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.pcap4j.org/post/learn_more/</loc>
+  </url>
+  
+</urlset>
